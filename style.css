@@ -1,0 +1,546 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* modal css start */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+ .button input {
+  background-color: #eb1212;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.submit input{
+                background-color: red;
+                border: none;
+                border-radius: 10px;
+                height: 50px;
+                width:130px;
+                color: white;
+                font-weight: bold;
+                margin: 10px;
+
+               }
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+.imgcontainer {
+  text-align: center;
+ 
+  position: relative;
+  background-color: black;
+  border-radius: 10px 10px 0px 0px;
+
+}
+
+img.avatar {
+  width: 40%;
+  
+}
+
+.container {
+  padding: 16px;
+  
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 50%; 
+  border-radius: 10px;
+}
+
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+
+/* modal css end */
+
+/* main css start */
+
+.main{
+     display: flex;
+     justify-content: space-between;
+     border-radius: 100% 0% 100% 0% / 0% 44% 56% 100% ;
+     background-color: #ffd6d1;
+     align-items: center;
+     height: 500px;
+     }
+
+.media input{
+  border: none;
+  background-color:#ffd6d1;
+  color: #ffd6d1;
+  border-radius: 10px;
+  height: 6px;
+  width: 6px;
+  
+ 
+}
+
+.main button {
+    border: none;
+    background-color:#eb1212;
+    color: white;
+    border-radius: 10px;
+    height: 46px;
+    width: 160px;
+    margin-bottom: 100px;
+    margin-left: 400px;
+}
+
+.main h2{color: rgb(83, 83, 83);
+         font-size: 50px; 
+         text-align: center;
+         margin-bottom: 50px;
+        margin-left: 30px;}
+/* main css end */
+
+
+.Iam {
+      padding: 2em 5em;
+      font: normal 40px/50px Montserrat, sans-serif;
+      color: rgb(56, 56, 56);
+      display: flex;
+      }
+.Iam h5{
+     color: white;
+}
+
+.Iam p {
+       height: 50px;
+       float: left;
+       margin-right: 0.3em;
+       }
+
+.Iam b {
+        float: left;
+        overflow: hidden;
+        position: relative;
+        height: 50px;
+        top: 0px;
+        }
+
+.Iam .innerIam
+               {
+                display: inline-block;
+                color: #ff1c02;
+                position: relative;
+                white-space: nowrap;
+                top: 0;
+                left: 0;
+                margin-left: 10px;
+          
+          
+          /*animation*/
+          -webkit-animation:move 5s;
+             -moz-animation:move 5s;
+              -ms-animation:move 5s;
+               -o-animation:move 5s;
+                  animation:move 5s;
+          /*animation-iteration-count*/
+          -webkit-animation-iteration-count:infinite;
+             -moz-animation-iteration-count:infinite;
+              -ms-animation-iteration-count:infinite;
+               -o-animation-iteration-count:infinite;
+                  animation-iteration-count:infinite;
+          /*animation-delay*/
+          -webkit-animation-delay:1s;
+             -moz-animation-delay:1s;
+              -ms-animation-delay:1s;
+               -o-animation-delay:1s;
+                  animation-delay:1s;
+          }
+          @keyframes move{
+          0%  { top: 0px; }
+          20% { top: -50px; }
+          40% { top: -100px; }
+          60% { top: -150px; }
+          80% { top: -200px; }
+          }
+          
+          @-webkit-keyframes move {
+              0%  { top: 0px; }
+              20% { top: -50px; }
+              40% { top: -100px; }
+              60% { top: -150px; }
+              80% { top: -200px; }
+          }
+          @-moz-keyframes move {
+              0%  { top: 0px; }
+              20% { top: -50px; }
+              40% { top: -100px; }
+              60% { top: -150px; }
+              80% { top: -200px; }
+          }
+          @-o-keyframes move {
+              0%  { top: 0px; }
+              20% { top: -50px; }
+              40% { top: -100px; }
+              60% { top: -150px; }
+              80% { top: -200px; }
+          }
+          @keyframes move {
+              0%  { top: 0px; }
+              20% { top: -50px; }
+              40% { top: -100px; }
+              60% { top: -150px; }
+              80% { top: -200px; }
+             }
+
+/*--first box css start*/
+.box .container{
+                display: flex; 
+                flex-wrap: wrap;
+                 justify-content: space-around;
+                 
+                }
+
+
+
+.container .card .icon {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: #f31818;
+    border-radius: 10px;
+  
+
+}
+
+.container .card .icon .fa {
+
+    position: absolute;
+
+    top: 38%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 80px;
+
+    color: #fff;
+    border-radius: 10px;
+}
+
+.container .card .slide {
+
+    width: 300px;
+
+    height: 200px;
+
+    transition: 0.5s;
+
+}
+
+.container .card .slide.slide1 {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 1;
+
+    transition: .7s;
+
+    transform: translateY(100px);
+
+}
+
+.container .card:hover .slide.slide1{
+
+    transform: translateY(0px);
+
+}
+
+.container .card .slide.slide2 {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    transition: .8s;
+
+    transform: translateY(-100px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+
+}
+
+.container .card:hover .slide.slide2{
+
+    transform: translateY(0);
+
+}
+
+.container .card .slide.slide2::after{
+
+    content: "";
+
+    position: absolute;
+
+    width: 30px;
+
+    height: 4px;
+
+    bottom: 15px;
+
+    left: 50%;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #000000;
+
+}
+
+.container .card .slide.slide2 .content p {
+
+    margin: 0;
+
+    padding: 0;
+
+    text-align: center;
+
+    color: #414141;
+
+}
+
+.container .card .slide.slide2 .content h3 {
+
+    margin: 0 0 10px 0;
+
+    padding: 0;
+
+    font-size: 24px;
+
+    text-align: center;
+
+    color: #414141;
+
+} 
+/*--first box css end*/
+
+
+/*--some text css start*/
+
+.main-contant{
+             background-image: url(images/simpal7.jpg);
+             background-repeat: no-repeat;
+              background-size: cover;
+              height: 500px;
+            }
+.main-contant-text h2{ font-size: 35px;
+                        color: rgb(54, 54, 54);                  
+                      }
+
+.main-contant-text p{
+                     font-size: 20px;
+                     
+                     }
+center h1{ border-bottom: 4px solid red;
+            width: 650px;
+          margin-top: 50px;}
+/*--some text css end*/
+
+/*--second service css start*/
+.second-service {
+           display: flex;
+           flex-wrap: wrap;
+          
+                 }
+
+.second-service-card{       
+                    height: 300px;
+                    width: 300px;
+                    background-color: ghostwhite;
+                    margin: 20px;
+                    box-shadow: rgb(99 99 99 / 20%) 0 2px 8px 0;
+                    }
+            
+.second-service-card:hover{
+    transform:scale(0.1.1);
+    background:white;
+    box-shadow:0px 10px 10px #b4c3b1;
+    z-index:1;
+    border-radius:8%;
+    padding: 20px;
+    margin-bottom: 3px;
+                     }
+
+.second-service-card .icon{
+              font-size: 70px;
+              color: red;
+              margin-left: 100px;
+              margin-top: 10px;
+                           }
+.second-service-card h1{text-align: center;
+                        font-size: 30px;
+                    padding: 30px;}
+
+/*--second service css end*/
+
+
+.card-header p{ 
+                 color: black;
+                 font-size:25px;
+                 
+                 
+               }
+.card-header p span{color: red;
+                    padding: 20px;
+                    }
+.accordion .card { margin: 10px;}
+
+.card-header i{color: red;
+               margin-left: 360px;}
+
+
+
+
+
+
+@media (max-width: 500px)
+{
+.main{height: 300px;
+      width:100%;
+      } 
+
+
+.main h2{
+  margin-top: 0px;
+  font-size: 13px;
+  width: 250px;}
+
+.main button {
+               display: none;
+              }
+
+.main img{display: none;
+          }
+        
+center h1{width: 70%;
+          font-size:26px;}
+
+.media input{ height: 30px;
+              width: 120px;
+              background-color: red;
+              margin-left: 100px;}
+    
+.Iam{padding: 0px;
+     font-size: 18px;
+     margin-top: 40px;
+    margin-right: 40px;}
+
+.Iam h1{font-size: 18px;
+       width: 220px;
+       margin-left: 20px;
+}
+
+.main-contant-text h2{font-size: 20px;}
+center h1{margin-top: 450px;
+          }
+.button input{background-color: black;
+              color: white;
+              width: 50%;
+           
+          }
+.imgcontainer{height: 60px;}
+
+.modal-content{ width: 80%;}
+
+.Iam{
+  font-size: 20px;
+  margin-top: 40px;
+ }
+
+
+}
